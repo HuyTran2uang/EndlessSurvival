@@ -3,7 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Player : MonoBehaviour
+public abstract class Player
 {
-    public virtual void Intrinsic() { }
+    public abstract void Intrinsic();
+}
+
+public class Warrior : Player
+{
+    public override void Intrinsic()
+    {
+
+    }
+}
+
+public class Thief : Player
+{
+    public override void Intrinsic()
+    {
+
+    }
 }

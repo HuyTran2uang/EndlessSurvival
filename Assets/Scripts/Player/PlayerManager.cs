@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] Player _player;
+    Player _player;
 
     public void LoadData()
     {
 
     }
+
+    private void Start()
+    {
+        _player = new Warrior();
+    }
+}
+
+public enum CharacterType
+{
+    Warrior,
+    Thief,
+    Mage
 }
